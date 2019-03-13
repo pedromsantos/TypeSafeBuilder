@@ -28,7 +28,7 @@ namespace TypeSafeBuilder
             {
                 private readonly Document document;
 
-                public MandatoryField2Builder(Document document)
+                internal MandatoryField2Builder(Document document)
                 {
                     this.document = document;
                 }
@@ -44,7 +44,7 @@ namespace TypeSafeBuilder
             {
                 private readonly Document document;
 
-                public OptionalFieldsBuilder(Document document)
+                internal OptionalFieldsBuilder(Document document)
                 {
                     this.document = document;
                 }
