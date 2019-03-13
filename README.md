@@ -1,2 +1,2 @@
 # TypeSafeBuilder
-A sample type safe builder for classes with mandatory and optional fields
+Sample compile-time checked builder in C# for classes with mandatory and optional fields
