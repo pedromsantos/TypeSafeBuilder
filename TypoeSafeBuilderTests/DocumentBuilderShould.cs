@@ -8,10 +8,22 @@ namespace TypeSafeBuilderTests
     public class DocumentBuilderShould
     {
         //[Fact]
-        //public void DoesNotCompile()
+        //public void DoesNotCompileMissingMandatoryField()
         //{
         //    var document =
         //        new Document.DocumentBuilder()
+        //            .SetMandatoryField1("mandatoryValue1")
+        //            .Build();
+
+        //    document.MandatoryField1.Should().Be("mandatoryValue1");
+        //}
+
+        //[Fact]
+        //public void DoesNotCompileWrongOrderMandatoryFields()
+        //{
+        //    var document =
+        //        new Document.DocumentBuilder()
+        //            .SetMandatoryField2("mandatoryValue1")
         //            .SetMandatoryField1("mandatoryValue1")
         //            .Build();
 
