@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace TypeSafeBuilder
 {
@@ -33,29 +33,29 @@ namespace TypeSafeBuilder
                     this.document = document;
                 }
 
-                public OptionalField3Builder SetMandatoryField2(float value)
+                public OptionalFieldsBuilder SetMandatoryField2(float value)
                 {
                     document.MandatoryField2 = value;
-                    return new OptionalField3Builder(document);
+                    return new OptionalFieldsBuilder(document);
                 }
             }
 
-            public class OptionalField3Builder
+            public class OptionalFieldsBuilder
             {
                 private readonly Document document;
 
-                public OptionalField3Builder(Document document)
+                public OptionalFieldsBuilder(Document document)
                 {
                     this.document = document;
                 }
 
-                public OptionalField3Builder SetOptionalField3(DateTime value)
+                public OptionalFieldsBuilder SetOptionalField3(DateTime value)
                 {
                     document.OptionalField3 = value;
                     return this;
                 }
 
-                public OptionalField3Builder SetOptionalField4(int value)
+                public OptionalFieldsBuilder SetOptionalField4(int value)
                 {
                     document.OptionalField4 = value;
                     return this;
