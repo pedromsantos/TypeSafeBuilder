@@ -5,6 +5,9 @@ using Xunit;
 
 namespace TypeSafeBuilderTests
 {
+    // The first two tests are commented because code does not compile
+    // this is a feature. We want compile time errors when using
+    // the builder in non conformat ways
     public class DocumentBuilderShould
     {
         //[Fact]
